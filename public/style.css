@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#weatherForm {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#weatherResult {
+    text-align: center;
+    font-size: 1.1em;
+}
+
+#weatherResult img {
+    max-width: 100px; /* 画像の最大幅を設定 */
+    height: auto; /* アスペクト比を維持 */
+    margin: 20px 0; /* 上下の余白を設定 */
+}
+
+.weather-detail {
+    background: #e3f2fd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#weatherForm select, #weatherForm button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#weatherForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#weatherForm button:hover {
+    background-color: #0056b3;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        /* スマートフォン用のスタイル */
+        padding: 10px;
+        display: block;
+    }
+
+    #weatherForm, #weatherResult {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #weatherForm select, #weatherForm button {
+        /* フォーム要素のサイズ調整 */
+        font-size: 1em;
+    }
+
+    #weatherResult img {
+        /* 画像のサイズ調整 */
+        max-width: 80px;
+    }
+
+   
+}
