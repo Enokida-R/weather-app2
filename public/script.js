@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    const imagesToPreload = ['/weather/sunny.png','/weather/ash.png ','/weather/clouds.png', '/weather/drizzle.png', '/weather/dust.png', '/weather/fog.png', '/weather/haze.png', '/weather/mist.png', '/weather/Rain.png', '/weather/sand.png', '/weather/smoke.png', '/weather/snow.png', '/weather/squall.png', '/weather/sunny.png', '/weather/thunderstom.png', '/weather/tornado.png'];
+    imagesToPreload.forEach((imageUrl) => {
+        const img = new Image();
+        img.src = imageUrl;
+    });
+});
+
+
 document.getElementById('weatherForm').addEventListener('submit', function(event) {
     event.preventDefault();
     const location = document.getElementById('locationInput').value;
