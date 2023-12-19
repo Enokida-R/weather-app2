@@ -3,7 +3,8 @@ const request = require("request");
 const dotenv = require("dotenv").config();
 
 const app = express();
-const port = 3000;
+
+
 
 app.use(express.static('public'));
 
@@ -29,6 +30,8 @@ app.get('/weather', (req,res) => {
     });
 })
 
-app.listen(port, () =>{
-    console.log(`Server running at http://localhost:${port}`);
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });

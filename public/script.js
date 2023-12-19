@@ -83,3 +83,4 @@ document.getElementById('weatherForm').addEventListener('submit', function(event
         document.getElementById('weatherResult').innerHTML = 'エラーが発生しました。'
     });
 });
+
