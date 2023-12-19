@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const imagesToPreload = ['/weather/sunny.png','/weather/ash.png ','/weather/clouds.png', '/weather/drizzle.png', '/weather/dust.png', '/weather/fog.png', '/weather/haze.png', '/weather/mist.png', '/weather/Rain.png', '/weather/sand.png', '/weather/smoke.png', '/weather/snow.png', '/weather/squall.png', '/weather/sunny.png', '/weather/thunderstom.png', '/weather/tornado.png'];
+    const imagesToPreload = ['/weather/ash.png ','/weather/clouds.png', '/weather/drizzle.png', '/weather/dust.png', '/weather/fog.png', '/weather/haze.png', '/weather/mist.png', '/weather/Rain.png', '/weather/sand.png', '/weather/smoke.png', '/weather/snow.png', '/weather/squall.png', '/weather/sunny.png', '/weather/thunderstom.png', '/weather/tornado.png'];
     imagesToPreload.forEach((imageUrl) => {
         const img = new Image();
         img.src = imageUrl;
@@ -33,13 +33,13 @@ document.getElementById('weatherForm').addEventListener('submit', function(event
                 case 'Snow':
                     backgroundImageUrl = 'url(./weather/snow.png)';
                 break;
-                case 'Thubderstom':
+                case 'Thunderstom':
                     backgroundImageUrl = 'url(./weather/thunderstom.png)';
                 break;
                 case 'Drizzle':
                     backgroundImageUrl = 'url(./weather/drizzle.png)';
                 break;
-                case 'MIst':
+                case 'Mist':
                     backgroundImageUrl = 'url(./weather/mist.png)';
                 break;
                 case 'Smoke':
@@ -63,7 +63,7 @@ document.getElementById('weatherForm').addEventListener('submit', function(event
                 case 'Squall':
                     backgroundImageUrl = 'url(./weather/squall.png)';
                 break;
-                case 'Tirnado':
+                case 'Tornado':
                     backgroundImageUrl = 'url(./weather/tornado.png)';
                 break;
             }
